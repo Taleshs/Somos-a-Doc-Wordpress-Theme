@@ -1,0 +1,29 @@
+.slider-item.logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    img {
+        @media (max-width:767px) {
+            width: 100px !important;
+        }
+
+        filter: grayscale(100%);
+        @include transition();
+        margin: 0px 20px;
+
+        &:hover {
+            filter: grayscale(0%);
+            @include transition();
+            cursor: pointer;
+        }
+    }
+}
+
+.sub-logos {
+    img {
+        margin: 0px ​70px !important;
+    }
+}

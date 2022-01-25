@@ -1,0 +1,126 @@
+#Servicos {
+    @media (max-width:767px) {
+        padding-bottom: 0em;
+    }
+}
+
+.wrapper.servicos {
+    overflow: visible;
+}
+
+//servicos
+.gb_gradient {
+    background-color: #403cff;
+
+    h1 {
+        color: #fff;
+        width: 100%;
+
+        &:after {
+            background-color: #33C785;
+        }
+    }
+}
+.slide-servico{
+    width: 100%;
+}
+.servicos {
+    .title {
+        @include font_Galano_Bold(20px, 700, #fff);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: .5em;
+
+        .icon {
+            text-align: center;
+            width: 83px;
+            height: 83px;
+            color: #fff;
+            display: block;
+            text-align: center;
+            line-height: 83px;
+            border-radius: 100px;
+            margin-right: 12px;
+        }
+
+        h3 {
+            width: 100%;
+            line-height: 30px;
+			@media (max-width: $medium) {
+				text-align:center;
+			}
+
+            span {
+                @include font_Galano_Regular(22px, 400, #fff);
+            }
+        }
+    }
+
+    .content {
+        padding-right: 0px;
+
+        p {
+            @include font_Helvetica_Regular(14px, 200, #fff);
+            line-height: 22px;
+			 @media (max-width: $medium) {
+				text-align:center;
+			}
+        }
+    }
+
+    .servicos-wrapper {
+        width: 100%;
+        margin-top: 2em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: stretch;
+        padding:0px 10px;
+
+       
+
+        .servico-box {
+            max-width: 300px;
+            width: 100%;
+            margin-bottom: 32px;
+            text-align: center;
+            border:2px solid #aaa;
+            border-radius: 20px;
+            padding:10px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            .icon{
+                margin: 0 auto;
+                img{
+                    width: 100%;
+                }
+            }
+
+            
+            @media (max-width: $mini) {
+                max-width: 90%;
+                margin:5px;
+                left: -30px;
+                position: relative;
+            }
+        }
+    }
+}
+.mobile-only{
+    display: none;
+    @media (max-width: $medium) {
+        display: block;
+    }
+}
+.desktop-only{
+	 display: block;
+    @media (max-width: $medium) {
+        display: none;
+    }
+}

@@ -1,0 +1,78 @@
+// @import url("//hello.myfonts.net/count/413871");
+  
+@font-face {
+  font-family: "GalanoGrotesqueAlt-Bold";
+  src: url('./webFonts/GalanoGrotesqueAltBold/font.woff2') format('woff2'), url('./webFonts/GalanoGrotesqueAltBold/font.woff') format('woff');
+}
+@font-face {
+    font-family: "GalanoGrotesqueAlt-Medium";
+    src: url('./webFonts/GalanoGrotesqueAltMedium/font.woff2') format('woff2'), url('./webFonts/GalanoGrotesqueAltMedium/font.woff') format('woff');
+}
+
+@font-face {
+    font-family: "GalanoGrotesqueAlt-Regular";
+    src: url('./webFonts/GalanoGrotesqueAltRegular/font.woff2') format('woff2'), url('./webFonts/GalanoGrotesqueAltRegular/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: "HelveticaNowText-Regular";
+  src: url('./webFonts/HelveticaNowTextRegular/font.woff2') format('woff2'), url('./webFonts/HelveticaNowTextRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "HelveticaNowText-Bold";
+  src: url('./webFonts/HelveticaNowTextBold/font.woff2') format('woff2'), url('./webFonts/HelveticaNowTextBold/font.woff') format('woff');
+}
+
+
+@mixin font_Galano_Bold(
+    $font-size: 16px,
+    $font-weight: 700,
+    $color:$primary_color,
+) {
+    font-family: "GalanoGrotesqueAlt-Bold";
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+}
+
+@mixin font_Galano_Medium(
+    $font-size: 16px,
+    $font-weight: 400,
+    $color:$primary_color,
+) {
+    font-family: "GalanoGrotesqueAlt-Medium";
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+}
+@mixin font_Galano_Regular(
+    $font-size: 16px,
+    $font-weight: 400,
+    $color:$primary_color,
+) {
+    font-family: "GalanoGrotesqueAlt-Regular";
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+}
+@mixin font_Helvetica_Regular(
+    $font-size: 16px,
+    $font-weight: 400,
+    $color:$primary_color,
+) {
+    font-family: "HelveticaNowText-Regular";
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+}
+@mixin font_Helvetica_Bold(
+    $font-size: 16px,
+    $font-weight: 400,
+    $color:$primary_color,
+) {
+    font-family: "HelveticaNowText-Bold";
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+}
+

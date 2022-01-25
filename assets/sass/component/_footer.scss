@@ -1,0 +1,91 @@
+.footer {
+    padding: 2em;
+    @media (max-width: $medium) {
+        padding:1em
+    }
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+
+        .logo-rodape {
+            img {
+                width: 120px;
+                @media (max-width: $medium) {
+                    width: 80px;
+                }
+            }
+        }
+
+        .social-links {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-content: center;
+                align-items: center;
+                flex-direction: row;
+
+                li {
+                    padding: 5px;
+
+                    a {
+                        img {
+                            width: 38px;
+                            @media (max-width: $medium) {
+                                width: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .disclaimer {
+            @include font_Helvetica_Regular(12px);
+            line-height: 20px;
+            padding-bottom: 0px;
+            padding-top: 1em;
+            margin: 0 auto;
+            max-width: 500px;
+			max-width:100%;
+        }
+    }
+}
+
+.whatsapp-link {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 2em;
+	@include transition(all, 0.5s, ease);
+	 img {
+		width: 40px;
+		 	@include transition(all, 0.5s, ease);
+
+	}
+	&:hover {
+		img{
+			@include transition(all, 0.5s, ease);
+			width: 50px;
+		}
+	}
+}
+
+.disclaimer_bottom {
+    padding: 10px;
+    background: #1a1a1a;
+    text-align: center;
+	color: #fff;
+}
+.logo-rodape {
+    width: 100%;
+	max-width:240px;
+}
+
+.social-links {
+    width: 100%;
+	max-width:240px;
+}

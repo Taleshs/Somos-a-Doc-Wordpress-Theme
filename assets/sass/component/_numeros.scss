@@ -1,0 +1,72 @@
+.numeros {
+    .section-content{
+        @media (max-width:$mini) {
+            display: block;
+        } 
+    }
+    .wrapper.section-content {
+        border: 3px solid #1967fa;
+        justify-content: left;
+        padding-bottom: 20px;
+    }
+
+    .section-content h1 {
+        position: relative;
+        background: #fff;
+        top: -20px;
+        width: initial;
+        left: 20px;
+        padding: 0px 25px;
+        display: block;
+        margin-bottom: -10px;
+
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.numeros-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+
+    .content {
+        @include font_Galano_Medium(14px, 700);
+        text-transform: capitalize;
+        text-align: center;
+        margin: 0em;
+        padding: 20px 0px 0px 0px;
+        width: 180px;
+        line-height: 20px;
+
+        @media (max-width:$medium) {
+            width: 100%;
+            padding: 1em;
+        }
+
+        span {
+            font-size: 22px;
+            color: #1967fa;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .number {
+            font-size: 32px;
+            padding-left: 5px;
+            line-height: 40px;
+        }
+
+        p {
+            padding-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,241 @@
+body {
+    background-color: #fff;
+    font-size: 100%;
+    @include font_Helvetica_Regular(16px);
+}
+
+.wrapper {
+    width: 1120px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: $medium) {
+        max-width: 90%;
+    }
+}
+
+.btn {
+    border-radius: 6px;
+    @include font_Galano_Bold(16px);
+    color: $link;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid $link;
+    padding: 10px;
+    background-color: #fff;
+    @include transition(all, 0.5s, ease);
+
+    &:hover {
+        background-color: $link;
+        color: #fff;
+        @include transition(all, 0.2s, ease);
+    }
+	@media (max-width:767px) {
+		padding:4px 10px;
+	}
+}
+
+.bg_gray {
+    background-color: $gray;
+}
+
+.section {
+    @media (max-width:767px) {
+        padding: 50px 30px;
+    }
+
+    padding: 50px 30px;
+
+    h1 {
+        @include font_Galano_Bold(32px);
+        @media (max-width:$medium){
+            @include font_Galano_Bold(24px);
+        }
+        text-transform: uppercase;
+        color: #1a1a1a;
+        position: relative;
+        width: 100%;
+        display: block;
+        margin-bottom: 32px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 78px;
+            background-color: #1967FA;
+            left: 0;
+            bottom: -5px;
+        }
+    }
+
+    .section-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        @media (max-width: $mini) {
+            display: initial;
+        }
+    }
+
+    .content {
+        @include font_Helvetica_Regular(14px, 400, $content_color);
+        line-height: 24px;
+        padding-right: 40px;
+
+        p {
+            padding-bottom: 10px;
+        }
+    }
+
+    .side-video {
+
+        @media (max-width: $medium) {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 2em;
+			padding-top:0px;
+        }
+
+        width: 100%;
+        max-width: 540px;
+        position: relative;
+		padding-top: 70px;
+
+        .player-wrapper {
+            position: relative;
+            padding-top: 56.25%;
+
+        }
+
+        .react-player {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            div {
+                position: relative;
+                z-index: 2;
+            }
+        }
+
+    }
+
+    .block-content {
+        width: 100%;
+        max-width: 530px;
+
+        @media (max-width: $medium) {
+            width: 100%;
+            max-width: 100%;
+        }
+
+    }
+}
+
+//somos-a-doc
+.somos-a-doc {
+    .block-content {
+
+        h1,
+        .content {}
+    }
+}
+
+
+//equipe
+.equipe {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: space-around;
+	
+	@media (max-width:767px) {
+            .content{
+				padding-top:30px;
+				padding-right:0px;
+			}
+        }
+	
+
+    .equipe-content {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .equipe-img {
+        width: 100%;
+        position: relative;
+        position: relative;
+        max-width: 900px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    p {
+        @include font_Helvetica_Regular(16px, 400, #1a1a1a);
+        line-height: 24px;
+        padding-bottom: 1em;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+//cases
+.cases-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+
+    .cases-box {
+        @media (max-width:767px) {
+            width: 100%;
+            margin-bottom: 1em;
+        }
+
+        width: 540px;
+        max-width: 100%;
+        height: auto;
+        background: #fff;
+
+        .case-img {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .case-content {
+            padding: 2em;
+
+            h2 {
+                @include font_Galano_Bold(22px);
+                padding-bottom: 1em;
+            }
+
+            .list-case {
+                @include font_Helvetica_Regular(16px);
+                line-height: 25px;
+
+                p {
+                    padding-bottom: 1em;
+                }
+
+                span {
+                    color: #007AFF;
+                }
+            }
+        }
+    }
+
+}

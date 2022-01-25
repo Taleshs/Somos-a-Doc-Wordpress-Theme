@@ -1,0 +1,5 @@
+01/06/22 4:49:48: style.scss - parse error: failed at `$medium: 900px` C:\Users\tales\Local Sites\somos-a-doc\app\public\wp-content\themes\somos-a-doc\assets\sass\component/_variables.scss on line 6, at column 1
+01/06/22 4:57:52: style.scss - Undefined variable $mini: component/_servicos.scss on line 107, at column 13
+Call Stack:
+#0 import component/_servicos.scss style.scss on line 62
+01/06/22 10:48:27: style.scss - parse error: failed at `:nth-child(2n-1)) {` C:\Users\tales\Local Sites\somos-a-doc\app\public\wp-content\themes\somos-a-doc\assets\sass\component/_timeline.scss on line 37, at column 13
